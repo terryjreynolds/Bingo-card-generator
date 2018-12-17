@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2vh;
+  font-family: "Oswald", sans-serif;
+  line-height: 5.5vh;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1;
+  grid-column: 1 / 6;
+  font-size: 8vmin;
+  border-left: none;
+}
+.bingoCard {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  border: solid black 1vh;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  width: 80vh;
+  height: 90vh;
+  text-align: center;
+  margin-right: 0.2vh;
+  margin-left: 2vh;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.2vh solid black;
+
+  font-size: 5vmin;
+  font-weight: bold;
+  color: black;
+}
+#g {
+  color: white;
+  background: black;
+  font-weight: normal;
+  outline: 0.2vh solid white;
+  outline-offset: -1vh;
+  font-size: 3vmin;
+  padding: 1vh;
+}
+.bingoCard .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / 6;
+  grid-row: 2;
+  background-color: black;
+  border-bottom: solid black 1vh;
+  color: white;
+  font-size: 6vmin;
+}
+#g0,
+#g5,
+#g10,
+#g14,
+#g19 {
+  border-left: solid black 1vh;
+}
+#g4,
+#g9,
+#g13,
+#g18,
+#g23 {
+  border-right: solid black 1vh;
+}
+ul {
+  list-style: none;
+  margin: 12.5vh 2vh 1vh -5vh;
+}
+li {
+  margin-bottom: 2vh;
+}
+button {
+  font-family: "Oswald", sans-serif;
+  font-size: 2vw;
+  width: 15vw;
+}
+button:hover {
+  background-color: rgb(60, 255, 0);
+  outline: 0.5vh dotted black;
+  outline-offset: -0.5vh;
+}
+#print {
+  font-size: 6vh;
+}
+#print:hover {
+  font-size: 9vh;
+}
